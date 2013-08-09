@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem "redcarpet"
 gem "activesupport"
@@ -11,3 +11,13 @@ gem "thin"
 gem "rack"
 gem "listen"
 gem "builder"
+
+group :development do
+  gem "pry"
+end
+
+group :test do
+  gem "rspec"
+  gem "capybara"
+  gem "poltergeist"
+end
